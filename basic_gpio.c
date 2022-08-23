@@ -60,7 +60,7 @@ void GPIO_writePin(GPIO_Port port, GPIO_Pin pin, uint8_t data){
     }
 }
 
-uint8_t GPIO_REGeadPin(GPIO_Port port, GPIO_Pin pin){
+uint8_t GPIO_ReadPin(GPIO_Port port, GPIO_Pin pin){
 
     switch (port)
     {
