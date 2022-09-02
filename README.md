@@ -6,3 +6,6 @@
 3. SysTick timer
 4. Basic GPIO
 5. GPTM (supporting 3 16/32-bit timers in port B)
+
+- GPTM driver: Timer0 & Timer1 are configured to work in 16-bit mode (individual mode) where each timer has 2 channels A & B.
+               Timer2 is configured to work in 32-bit mode (concatenated channels).
