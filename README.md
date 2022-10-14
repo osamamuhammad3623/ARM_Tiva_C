@@ -9,5 +9,5 @@
                Timer2 is configured to work in 32-bit mode (concatenated channels).
 
 ## C++ Drivers:
-- 'BuiltIn Led' class, as a driver for the Tiva C leds [built-in]
-- 'BuiltIn Switch' class, as a driver for the Tiva C switches [built-in]
+1. 'BuiltIn Led' class, as a driver for the Tiva C leds [built-in]
+2. 'BuiltIn Switch' class, as a driver for the Tiva C switches [built-in]
