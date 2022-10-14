@@ -12,3 +12,4 @@
 
 ## C++ Drivers:
 - 'BuiltIn Led' class, as a driver for the Tiva C leds.
+- 'BuiltIn Switch' class, as a driver for the Tiva C switches.
