@@ -1,7 +1,6 @@
 #ifndef SYS_TICK_H_
 #define SYS_TICK_H_
 
-#include "tm4c123gh6pm_registers.h"
 #include <stdint.h>
 
 /********************************************************/
