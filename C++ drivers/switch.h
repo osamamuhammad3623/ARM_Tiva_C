@@ -11,8 +11,6 @@ class BuiltIn_Switch{
     Switch_Pin sw;
 public:
 
-    BuiltIn_Switch(Switch_Pin user_switch);
-
     /*
     * Description: Configure one of the built-in switches
     *      1.make the pin an input pin
@@ -20,8 +18,7 @@ public:
     *      3.enable pull-up resistor
     *      3.digital enable
     * */
-    void Configure();
-
+    BuiltIn_Switch(Switch_Pin user_switch);
 
     /*
     * Description: Check whether a switch is pressed on not.

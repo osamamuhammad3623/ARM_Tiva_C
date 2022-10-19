@@ -4,11 +4,6 @@
 #include <stdint.h>
 
 BuiltIn_Led::BuiltIn_Led(LED_Color c) : color{c}{
-  this->Configure();
-}
-
-void BuiltIn_Led::Configure(void)
-{
   SYSCTL_RCGC2_R |= (1 << 5); /* enable clock for port F */
   SET_BIT(GPIO_PORTF_DIR_R , color);
   CLEAR_BIT(GPIO_PORTF_AFSEL_R, color);

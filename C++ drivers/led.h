@@ -8,17 +8,15 @@ typedef enum {
 class BuiltIn_Led{
     LED_Color color; /* LED color, red is the default */
 
-    /*
+public:
+
+   /*
     * Description: Configure a specific internal LED
     *      1.make the pin an output pin
     *      2.no alternate function
     *      3.digital enable
     *      4.clear data register
     * */
-    void Configure(void);
-
-public:
-
     BuiltIn_Led(LED_Color c);
 
     /*

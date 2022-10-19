@@ -4,10 +4,7 @@
 #include "tm4c123gh6pm.h"
 
 BuiltIn_Switch::BuiltIn_Switch(Switch_Pin user_switch) : sw{user_switch}{
-	Configure();
-}
 
-void BuiltIn_Switch::Configure(){
 	SYSCTL_RCGC2_R |= (1 << 5); /* enable clock for port F */
 	CLEAR_BIT(GPIO_PORTF_DIR_R, sw);
 	CLEAR_BIT(GPIO_PORTF_AFSEL_R, sw);
@@ -23,3 +20,5 @@ uint8_t BuiltIn_Switch::isPressed(){
 
     return 0;
 }
+
+int main(void){}
